@@ -59,7 +59,7 @@ ____________         ___________________          ________________
   - `CS5800i_E`, `CS5800i_MB`, `CS5800i_M`, `CS6800i_E`, `CS6800i_MB`, `CS6800i_M`, `WLW176i_E`, `WLW176i_TP70`, `WLW176i_TP180`, `WLW186i_E`, `WLW186i_TP70`, `WLW186i_TP180`
 - `model_odu` - enum (Outdoor Unit): `4`, `5`, `7`, `10`, `12` [kW]
 - `sw_idu`- enum (Software version IDU): `5.27`, `5.35`, `7.10.0`, `9.6.1`, `9.7.0`, `12.11.1`
-- `sw_odu`- enum (Software version ODU): `5.27`, `5.35`, `7.10.0`, `9.6.0`, `9.10.0`, `9.15.0`
+- `sw_odu`- enum (Software version ODU): `5.27`, `5.35`, `7.10.0`, `9.6.0`, `9.10.0`, `9.12.0`, `9.15.0 `
 
 ### Measurements
 

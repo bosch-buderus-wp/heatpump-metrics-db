@@ -47,7 +47,7 @@ ____________         ___________________          ________________
 - `building_construction_year` - integer: Year of building construction (optional)
 - `design_outdoor_temp_c` - float: Design outdoor temperature in °C (optional)
 - `building_energy_standard` - enum:
-  - `unknown`, `passive_house`, `kfw_40_plus`, `kfw_40`, `kfw_55`, `kfw_70`, `kfw_85`, `kfw_100`, `kfw_115`, `kfw_denkmalschutz`, `old_building_unrenovated`, `energetically_renovated`, `nearly_zero_energy_building`, `minergie`
+  - `unknown`, `passive_house`, `kfw_40_plus`, `kfw_40`, `kfw_55`, `kfw_70`, `kfw_85`, `kfw_100`, `kfw_115`, `kfw_denkmalschutz`, `old_building_unrenovated`, `old_building_partially_renovated`, `energetically_renovated`, `nearly_zero_energy_building`, `minergie`
 - `building_type` - enum:
   - `single_family_detached`, `semi_detached`, `terraced_mid`, `terraced_end`, `multi_family_small`, `multi_family_large`, `apartment`, `commercial`, `other`
 - `notes`- string: Notes like insulation standards, passive house, etc. (optional)

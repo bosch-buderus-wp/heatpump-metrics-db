@@ -60,6 +60,7 @@ ____________         ___________________          ________________
 - `model_odu` - enum (Outdoor Unit): `4`, `5`, `7`, `10`, `12` [kW]
 - `sw_idu`- enum (Software version IDU): `5.27`, `5.35`, `7.10.0`, `9.6.1`, `9.7.0`, `12.11.1`
 - `sw_odu`- enum (Software version ODU): `5.27`, `5.35`, `7.10.0`, `9.6.0`, `9.10.0`, `9.12.0`, `9.15.0 `
+- `thermometer_offset_k` - float: Calibration offset for outdoor temperature sensor in Kelvin. Positive values indicate the thermometer reads too high e.g., +2.5 K means the sensor shows 2.5 K higher than actual temperature. (default: 0)
 
 ### Measurements
 

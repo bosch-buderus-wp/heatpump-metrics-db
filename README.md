@@ -184,3 +184,9 @@ Distributed under the **MIT License**. See [LICENSE](LICENSE) for more informati
 - [Supabase](https://supabase.com/)
 - [Supabase CLI](https://supabase.com/docs/guides/local-development/cli/overview)
 - [Heatpump Metrics UI](https://github.com/bosch-buderus-wp/heatpump-metrics-ui)
+
+## Model families
+
+Systems now have a `model_family_id`. The read-only `model_families` and `model_combinations` catalogs define valid device selections; the database rejects incompatible combinations and firmware values outside the standard family. `model_odu` is a manufacturer-specific **type class**, not a directly comparable kW rating.
+
+The enum migration must be applied before the catalog migration; deploy the family-aware UI before registering systems from other families. Existing systems default to the standard family.

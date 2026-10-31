@@ -27,4 +27,17 @@ order by created_at desc limit 1200;
 explain (analyze, buffers, format json)
 select count(*) from public.sample_daily_values_view_by_outdoor_temperature(
   model_family => 'cs5800_6800', max_rows => 1000, outdoor_temperature_bin_width_k => 2);
+-- A date filter must remain within budget when the view needs the following day.
+explain (analyze, buffers, format json)
+select * from public.daily_values_view
+where model_family_id = 'cs5800_6800'
+  and date >= '2026-09-01' and date <= '2026-09-30'
+order by date desc;
+-- Match the first page of the building comparison.
+explain (analyze, buffers, format json)
+select date, heating_id, heated_area_m2, thermal_energy_heating_kwh, building_energy_standard
+from public.daily_values_view
+where model_family_id = 'cs5800_6800'
+  and date >= '2026-01-01' and date < '2027-01-01'
+order by date, heating_id limit 1000;
 rollback;
